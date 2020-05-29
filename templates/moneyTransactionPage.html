@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>web3-registration</title>
+    <style>
+        button.knopka {
+            color: #fff;
+            background: #6495ED;
+            padding: 7px;
+            border-radius: 5px;
+            border: 2px solid #1E90FF;
+        }
+
+        button.knopka:hover {
+            background: #4169E1;
+        }
+
+    </style>
+</head>
+<body>
+<h2 align=center>Transaction</h2>
+<form action="/transaction" method="POST">
+    <table style=" width: 70%; border: 4px double black;" align=center>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td align=center><label>Your name </label><input type="text" name="senderName"></td>
+        </tr>
+
+        <tr>
+            <td align=center><label>Password </label><input type="text" name="senderPass"></td>
+        </tr>
+
+        <tr>
+            <td align=center><label>Transfer amount </label><input type="text" name="count"></td>
+        </tr>
+        <tr>
+            <td align=center><label>Receiver name </label><input type="text" name="nameTo"></td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td align=center>
+                <button class=knopka type="submit">Transaction</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
+
